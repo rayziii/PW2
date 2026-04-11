@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>Acerte o Número</title>
+</head>
+<body>
+    
+
+    <form action='/teste' method="POST">
+
+        <h1>Acerte o número (1-6): </h1>
+
+        <div class="pedido">
+            <input type="number" name="num" required>
+        </div>
+
+        <input type="hidden" name="numero" value="">
+        <input type="hidden" name="tentativas" value="0">
+
+        <button type="submit">Verificar</button>
+
+        <div class="gato1">
+        <img src="/images/gato1.gif" class="gato">
+        </div>
+
+    </form>
+
+</body>
+</html>

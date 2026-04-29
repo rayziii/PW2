@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Notas Entregues</title>
+</head>
+<body>
+
+    <div class="container2">
+    <h1>Notas entregues:</h1>
+
+    <div class="saida">
+        <% notas.forEach(n => { %>
+            <div class="nota">
+
+                <% for (let i = 0; i < n.quantidade; i++) { %>
+                    <img src="<%= n.imagem %>" alt="Nota <%= n.nota %>">
+                <% } %>
+
+                <p><%= n.quantidade %> x R$ <%= n.nota %></p>
+
+            </div>
+        <% }) %>
+    </div>
+
+    <a href="/">Voltar</a>
+
+    </div>
+
+</body>
+</html>

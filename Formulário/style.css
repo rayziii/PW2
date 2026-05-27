@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(82, 142, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 800px;
+}
+
+h1 {
+    font-family: 'Sour Gummy';
+    font-size: 50px;
+    text-align: center;
+    color: rgb(51, 97, 123);
+}
+
+label {
+    font-family: 'Sour Gummy';
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid rgb(46, 80, 99);
+    font-size: 20px;
+    font-family: 'Sour Gummy';
+    padding: 10px;
+}
+
+option {
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.selecione {
+    display: flex;
+    flex-direction: column;
+}
+
+.selecione select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid rgb(46, 80, 99);
+    font-family: 'Sour Gummy';
+    font-size: 20px;
+}
+
+.genero {
+    margin-bottom: -20px;
+}
+
+.opcoes input {
+    width: 25px;
+}
+
+input[type="radio"] {
+    accent-color: rgb(46, 80, 99);
+}
+
+.opcoes label {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    left: 40px;
+    bottom: 30px;
+}
+
+button {
+    font-family: 'Sour Gummy';
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid rgb(46, 80, 99);
+    background-color: rgb(46, 80, 99);
+    color: white;
+    display: block;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dados {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dados h2 {
+    font-family: 'Sour Gummy';
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dados p {
+    font-family: 'Sour Gummy';
+    font-size: 25px;
+    margin-bottom: -20px;
+}

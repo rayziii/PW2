@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Padaria</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+
+    <h1> <i class="bi bi-heart"></i> Padaria Doces Sonhos <i class="bi bi-heart"></i> </h1>
+
+    <div class="fundo1">
+
+    <h2>Sua senha: <%= senha %></h2>
+
+    <div class="mensagem">
+        <% if (senha == numeroAtual) { %>
+            <h3 class="atendido">🎉 É a sua vez de ser atendido!</h3>
+        <% } else { %>
+            <h3>⏰ Aguarde sua senha ser chamada.</h3>
+        <% } %>
+    </div>
+
+    <form action="/" method="GET">
+        <button type="submit">Pegar Nova Senha</button>
+    </form>
+
+    </div>
+
+    <div class="fundo2">
+
+    <h3>Lista Atual:</h3>
+    <ul>
+        <% if (lista.length > 0) { %>
+            <% lista.forEach(item => { %>
+                <li><%= item %></li>
+        <% }) %>
+    <% } else { %>
+        <h4>Fila Encerrada.</h4>
+    <% } %>
+    </ul>
+
+    <% if (numeroAtual) { %>
+        <h2>Último número chamado: <%= numeroAtual %></h2>
+    <% } else { %>
+        <h2>Nenhum número foi chamado.</h2>
+    <% } %>
+
+     <form action="/chamar" method="POST">
+        <input type="hidden" name="senha" value="<%= senha %>">
+        <button type="submit">Chamar Próximo</button>
+    </form>
+
+    </div>
+
+    <form action="/reiniciar" method="POST">
+        <input type="hidden" name="senha" value="<%= senha %>">
+        <button type="submit">Reiniciar Fila</button>
+    </form>
+
+</body>
+</html>

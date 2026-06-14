@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(250, 133, 153);
+}
+
+h1 {
+    color: rgb(145, 60, 75);
+    font-family: 'Sour Gummy';
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    
+    text-shadow:
+    -1px -1px 0 #ffd1dc,
+     1px -1px 0 #ffd1dc,
+    -1px  1px 0 #ffd1dc,
+     1px  1px 0 #ffd1dc,
+     0px  0px 10px #ffd1dc;
+}
+
+i {
+    color: rgb(145, 60, 75);
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Sour Gummy';
+    font-size: 30px;
+}
+
+.fundo1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 130px;
+    background-color: rgb(248, 222, 92);
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid rgb(161, 132, 36);
+}
+
+.fundo1 h2 {
+    position: relative;
+    bottom: 15px;
+    color: rgb(161, 132, 36);
+    font-family: 'Sour Gummy';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.fundo1 h3 {
+    position: relative;
+    bottom: 27px;
+    color: rgb(161, 132, 36);
+    font-family: 'Sniglet';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mensagem .atendido {
+    color: red;
+}
+
+.mensagem {
+    height: 20px;
+    margin-top: -10px;
+}
+
+.fundo1 button {
+    position: relative;
+    bottom: 10px;
+    width: 170px;
+    height: 50px;
+    border: 3px solid rgb(161, 132, 36);
+    border-radius: 20px;
+    font-family: 'Sniglet';
+    font-size: 18px;
+    color: rgb(161, 132, 36);
+    background-color: white;
+}
+
+.fundo2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 500px;
+    background-color: rgb(174, 121, 253);
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid rgb(80, 68, 96);
+}
+
+.fundo2 h2 {
+    color: rgb(61, 44, 87);
+    font-family: 'Sniglet';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fundo2 h3 {
+    color: rgb(61, 44, 87);
+    font-family: 'Sour Gummy';
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.fundo2 h4 {
+    position: relative;
+    top: 10px;
+    color: red;
+    font-family: 'Sour Gummy';
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.fundo2 button {
+    position: relative;
+    bottom: 5px;
+    width: 170px;
+    height: 50px;
+    border: 3px solid rgb(61, 44, 87);
+    border-radius: 20px;
+    font-family: 'Sniglet';
+    font-size: 18px;
+    color: rgb(61, 44, 87);
+    background-color: white;
+}
+
+ul {
+    position: relative;
+    bottom: 15px;
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+}
+
+li {
+    font-family: 'Sour Gummy';
+    font-size: 25px;
+    color: rgb(61, 44, 87);
+    padding: 10px;
+    border: 2px solid rgb(61, 44, 87);
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    position: relative;
+    bottom: 10px;
+    width: 530px;
+    height: 50px;
+    border: 3px solid rgb(145, 60, 75);
+    border-radius: 20px;
+    font-family: 'Sniglet';
+    font-size: 25px;
+    color: rgb(145, 60, 75);
+    background-color: rgb(239, 196, 203);
+    display: block;
+    margin: 0 auto;
+}
+
+
+

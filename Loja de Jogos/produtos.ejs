@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gorditas:wght@400;700&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Produtos</title>
+</head>
+<body>
+    <section>
+        <h1> Loja de Jogos </h1>        
+    </section>
+
+    <div class="lista">
+        <ul>
+            <% listaProdutos.forEach(function(produto) { %>
+                <li>
+                <img src="<%= produto.imagem %>" alt="<%= produto.nome %>">
+                        <h2>ID:</h2> <p><%= produto.id %></p>
+                        <br>
+
+                        <h2>Nome:</h2> <p><%= produto.nome %></p>
+                        <br>
+
+                        <h2>Preço:</h2> <p>R$ <%= produto.preco.toFixed(2) %></p>
+                        <br>
+
+                        <h2>Descrição:</h2> <p><%= produto.descricao %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+</body>
+</html>

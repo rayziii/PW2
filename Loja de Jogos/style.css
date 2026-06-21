@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.243), rgba(0, 0, 0, 0.243)), url("./images/fundo.png");
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    background-color:rgb(250, 222, 135);
+}
+
+h1 {
+    font-family: 'Cherry Bomb One';
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    color:rgb(171, 133, 63);
+    
+    text-shadow:
+        0 0 5px rgb(255, 213, 108),
+        0 0 10px rgb(255, 213, 108),
+        0 0 20px rgb(255, 213, 108);
+}
+
+.lista ul {
+    list-style: none;
+}
+
+.lista li {
+    background-color: rgb(255, 213, 108);
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 230px;
+    min-height: 200px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+}
+
+.lista li:hover {
+    transform: scale(1.03);
+    background-color:rgb(92, 67, 33);
+}
+
+.lista img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+}
+
+.lista li:hover h2 {
+    color: rgb(255, 213, 108);
+}
+
+.lista li:hover p {
+    color: white;
+}
+
+h2 {
+    display: inline;
+    position: relative;
+    top: 15px;
+    color: rgb(92, 67, 33);
+    font-family: 'Sour Gummy';
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    transition: color 0.2s ease;
+}
+
+.lista p {
+    position: relative;
+    top: 12px;
+    left: 5px;
+    font-family: 'Sniglet';
+    font-weight: 500;
+    font-size: 20px;
+    display: inline;
+}
+
+p {
+    transition: color 0.2s ease;
+}
+
+
